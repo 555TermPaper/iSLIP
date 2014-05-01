@@ -1,0 +1,13 @@
+1. Please use "make" to compile the code and "make clean" to remove the binaries. 
+   Use make DEBUG=1 for additional debug information in log file
+2. To change the config change the value of variables in the main() [isclip.c] and recompile
+	a. numPort for the number of ports
+	b. simTime for the number of timeslots to do the simulation
+3. To run the code for iSLIP use the command ./islip ISLIP and to run it for rrm use the command ./islip rrm
+4. Simulation.log file is generated with a detailed log of packet entering and beign serviced.
+5. param.dat file contains parameters like %throughput, average delay and total delay against load. 
+  The graphs are ploted using this .dat file using gnuplot.
+6. queueLen.dat file contains the length of queues after every timeslot
+7. avg_queueLen.dat file contains the time average queue length after evry time slot.
+
+In case of any difficulties contact sourabhk@usc.edu or barawkar@usc.edu
